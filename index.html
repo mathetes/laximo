@@ -11,82 +11,261 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <style>
-            body {
-                padding-top: 50px;
-                padding-bottom: 20px;
-            }
-        </style>
+        <link rel="stylesheet" href="css/bootstrap.min.css">        
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
     <body>
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Project name</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <form class="navbar-form navbar-right" role="form">
-            <div class="form-group">
-              <input type="text" placeholder="Email" class="form-control">
+    <div id="wrapper">
+      <div class="jumbotron">        
+        <header>      
+          <div class="container">
+            <!--Left block -->
+            <div class="col-md-3" id="barcode">
+              <img src="images/barcode.jpg" alt="logo">
+              <div style="clear: both"></div>
+              <span>
+                Dmitri Miasnikov 
+              </span><br />
+              <span>
+                Obachgasse 2 A-1220 Wien
+              </span><br />
+              <span>
+                Österreich 
+              </span>
             </div>
-            <div class="form-group">
-              <input type="password" placeholder="Password" class="form-control">
+            <!-- Center block Logo with table-->
+            <div class="col-md-6" id="logo">
+              <img src="images/logo.png" alt="logo">
+              <table id="toptable" class="table table-striped table-hover">
+                <tr>
+                  <th scope="col">
+                    <div>Kunden-Nummer<br /><span>Customer No. / Номер клиента</span></div>
+                  </th>
+                  <th scope="col">
+                    <div>Beleg-Nummer<br /><span>Dokumen’t No. / Номер документа</span></div>
+                  </th>
+                  <th scope="col">
+                    <div>Datum<br /><span>Date / Дата</span></div>
+                  </th>
+                  <th scope="col">
+                    <div>Seite<br /><span>Page / Страница</span></div>
+                  </th>
+                  <th scope="col">
+                    <div>Versand<br /><span>Shipping / Отправка груза</span></div>
+                  </th>
+                </tr>
+                <tr>
+                  <td>
+                    <div>11111111</div>
+                  </td>
+                  <td>
+                    <div>Proforma</div>
+                  </td>
+                  <td>
+                    <div>01.01.2014</div>
+                  </td>
+                  <td>
+                    <div>1</div>
+                  </td>
+                  <td>
+                    <div>Post</div>
+                  </td>
+                </tr>
+              </table>
             </div>
-            <button type="submit" class="btn btn-success">Sign in</button>
-          </form>
-        </div><!--/.navbar-collapse -->
-      </div>
-    </nav>
-
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
-      <div class="container">
-        <h1>Hello, world!</h1>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
-      </div>
+            <!-- Right block -->
+            <div class="col-md-3" id="mototrans">
+              <img src="images/mototrans.png" alt="mototrans">
+              <div style="clear: both"></div>
+              <span>
+                Motortrans Logistik GmbH.<br />Obachgasse 2<br />A-1220 Wien<br />Österreich T<br />Tel: +43 1 743 53 11<br />Fax:+43 1 743 53 11 20
+              </span>
+            </div>         
+          </div>
+        </header>        
     </div>
-
-    <div class="container">
+    <div id="triangle-top"></div>    
+    <div class="container" id="main-content">
       <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-       </div>
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
+      <div class="row" id="main-row">
+        <!--Main table-->
+        <table width="96%" border="1" id="main-table" class="table table-striped table-hover">
+          <tr class="th-titles">
+          <th width="9%" scope="col">Bestell-Nr <br /> <span> Order No. / Номер заказа</span></th>
+            <th width="6%" scope="col">Menge <br /><span>Qty. / Кол-во</span></th>
+            <th width="11%" scope="col">Art-Nr <br /><span> Article No. / Артикул</span></th>
+            <th width="15%" scope="col">Art-Nr Neu<br /><span> Article No. New / Арт. новый</span></th>
+            <th width="21%" scope="col">Artikelbezeichnung <br /><span>  Article Description / Название артикла</span></th>
+            <th width="5%" scope="col">&nbsp;</th>
+            <th width="11%" scope="col">Preis EUR <br /><span> 0Price / Цена</span></th>
+            <th width="4%" scope="col">%</th>
+            <th width="9%" scope="col">Summe EUR <br /><span> Sum / Сумма</span></th>
+            <th width="4%" scope="col">MwSt <br /><span> VAT / НДС</span></th>
+          </tr>
+          <tr class="tr-titles">
+            <td><div>001-0001</div></td>
+            <td><div>1</div></td>
+            <td><div>A123456123 POST </div></td>
+            <td><div>A456123456</div></td>
+            <td> <div>Autoersatzteil (название детали)</div></td>
+            <td><div></div></td>
+            <td><div>100</div></td>
+            <td><div>10</div></td>
+            <td><div>90</div></td>
+            <td><div>20</div></td>
+          </tr>
+          <tr class="tr-titles">
+            <td><div>001-0001</div></td>
+            <td><div>1</div></td>
+            <td><div>A123456123 POST </div></td>
+            <td><div>A456123456</div></td>
+            <td> <div>Autoersatzteil (название детали)</div></td>
+            <td><div></div></td>
+            <td><div>100</div></td>
+            <td><div>10</div></td>
+            <td><div>90</div></td>
+            <td><div>20</div></td>
+          </tr>
+          <tr class="tr-titles">
+            <td><div>001-0001</div></td>
+            <td><div>1</div></td>
+            <td><div>A123456123 POST </div></td>
+            <td><div>A456123456</div></td>
+            <td> <div>Autoersatzteil (название детали)</div></td>
+            <td><div></div></td>
+            <td><div>100</div></td>
+            <td><div>10</div></td>
+            <td><div>90</div></td>
+            <td><div>20</div></td>
+          </tr>
+          <tr class="tr-titles">
+            <td><div>001-0001</div></td>
+            <td><div>1</div></td>
+            <td><div>A123456123 POST </div></td>
+            <td><div>A456123456</div></td>
+            <td> <div>Autoersatzteil (название детали)</div></td>
+            <td><div></div></td>
+            <td><div>100</div></td>
+            <td><div>10</div></td>
+            <td><div>90</div></td>
+            <td><div>20</div></td>
+          </tr>
+          <tr class="tr-titles">
+            <td><div>001-0001</div></td>
+            <td><div>1</div></td>
+            <td><div>A123456123 POST </div></td>
+            <td><div>A456123456</div></td>
+            <td> <div>Autoersatzteil (название детали)</div></td>
+            <td><div></div></td>
+            <td><div>100</div></td>
+            <td><div>10</div></td>
+            <td><div>90</div></td>
+            <td><div>20</div></td>
+          </tr>
+          <tr class="tr-titles">
+            <td><div>001-0001</div></td>
+            <td><div>1</div></td>
+            <td><div>A123456123 POST </div></td>
+            <td><div>A456123456</div></td>
+            <td> <div>Autoersatzteil (название детали)</div></td>
+            <td><div></div></td>
+            <td><div>100</div></td>
+            <td><div>10</div></td>
+            <td><div>90</div></td>
+            <td><div>20</div></td>
+          </tr>
+          <tr class="tr-titles">
+            <td><div>001-0001</div></td>
+            <td><div>1</div></td>
+            <td><div>A123456123 POST </div></td>
+            <td><div>A456123456</div></td>
+            <td> <div>Autoersatzteil (название детали)</div></td>
+            <td><div></div></td>
+            <td><div>100</div></td>
+            <td><div>10</div></td>
+            <td><div>90</div></td>
+            <td><div>20</div></td>
+          </tr>
+          <tr class="tr-titles">
+            <td><div>001-0001</div></td>
+            <td><div>1</div></td>
+            <td><div>A123456123 POST</div></td>
+            <td><div>A456123456</div></td>
+            <td> <div>Autoersatzteil (название детали)</div></td>
+            <td><div></div></td>
+            <td><div>100</div></td>
+            <td><div>10</div></td>
+            <td><div>90</div></td>
+            <td><div>20</div></td>
+          </tr>
+        </table>    
       </div>
 
-      <hr>
+      <div class="row" id="sub-row">
+          <!-- Left strings under main table-->
+          <div class="col-md-4">
+            <p>
+              Lieferung im Namen, für Rechnung und zu den Konditionen von Par
+            </p>
+            <span class="head-font">
+              Konditionen (форма)<br />Gewicht (вес)
+            </span>
+          </div>
+          <!-- Empty place-->
+          <div class="col-md-4">
+         
+          </div>
+          <!--Right strings under main table-->
+          <div class="col-md-2 params">
+            <span class="head-font">
+              Netto: <br />MwSt (20%): <br />Gesamt:
+            </span>
+          </div>
+          <div class="col-md-2">
+            <span class="head-font">
+              2568.56 EUR<br /> 574.76 EUR<br />  3080.67 EUR  
+            </span>
+          </div>
+          
+      </div>
+      <!-- bottom table-->
+      <div class="row" id="subrow-table">
+          <!-- Left strings under main table-->
+          <div class="col-md-12">         
+<table width="100%" border="1" id="sub-table" class="table table-hover">
+              <tr>
+              <th width="15%" class="th-titles" scope="row">Firmenbuchnummer<br /><span>Commercial registry / Регист. номер компании</span></th>
+                <td colspan="2">FN 262438 p123</td>
+                <th class="th-titles" width="13%">UID-Nr<br /><span>VAT No. / Номер НДС</span></th>
+                <td colspan="2">ATU61745124</td>
+                <th class="th-titles" width="14%">EORI:</th>
+                <td colspan="2">ATEOS10000000000135</td>
+              </tr>
+              <tr>
+                <th class="th-titles" rowspan="2" scope="row">Bankverbindung <br /><span>Bank details / Реквизиты банковского счета</span></th>
+                <td width="14%">COMMERZBANK AG </td>
+                <td colspan="2">IBAN: DE 96 74040082 0 6228886 00</td>
+                <td width="10%">BIC: COBADEFF740</td>
+                <td colspan="3" rowspan="2">Kontonummer: 622 888 6Kontonummer: 110259000</td>
+                <td>Bankleitzahl: 74040082</td>
+              </tr>
+              <tr>
+                <td>BAWAG-PSK</td>
+                <td colspan="2">IBAN: AT161400000110259000</td>
+                <td>BIC: BAWAATWW</td>
+                <td>Bankleitzahl: 14000</td>
+              </tr>
+            </table>
+          </div>                  
+      </div>            
+    </div> <!-- /container -->
+    <div id="triangle-bottom"></div>
+  </div>
 
-      <footer>
-        <p>&copy; Company 2015</p>
-      </footer>
-    </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
         <script src="js/vendor/bootstrap.min.js"></script>

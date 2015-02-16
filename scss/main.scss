@@ -1,0 +1,189 @@
+$width: 3263px;
+@mixin head-font{
+	font-size:3em;
+	text-align:center;
+	font-family:"Tahoma";
+	font-weight:bold;
+}
+@mixin sub-font{
+	font-size:2em;
+	text-align:center;
+	font-family:"Tahoma";
+}
+@mixin contact-font{
+	font-size:3em;
+	font-family:"Tahoma";
+}
+
+@mixin small-font{
+	font-size:15px;
+	font-family:"Tahoma";
+}
+
+
+
+#wrapper{
+		min-width:$width;
+		font-size:1em;					
+	.jumbotron{
+			margin:0 auto;
+			background-color: #fff;
+		header{	
+			.container{
+					width: $width;
+				#barcode{
+						@include contact-font;
+						text-align:left;	
+					img{
+						width:428px;
+						margin: 0 0 20px 0;
+					}
+					span{
+						padding:0 0 90px 60px;
+					}
+				}
+				#logo{
+					width:1420px;
+					margin-right:190px;
+					img{
+						width:487px;
+						display:block;
+						margin:0 auto 10px;
+					}					
+					#toptable{
+						display:table;
+						margin:0 auto;
+						border:1px solid black; 
+						width:1425px;
+						th{
+							height:130px;
+							background-color:#e4edf9;
+							@include head-font;
+							border:1px solid black; 
+								span{
+									@include small-font;
+								}					
+						}
+						tr{
+							td{
+								@include sub-font;
+								vertical-align:middle;
+								height:120px;
+								border:1px solid black; 
+							}
+						}
+
+						
+					}
+				}
+				#mototrans{
+						@include contact-font;
+						text-align:left;
+						padding-left:135px;						
+					img{
+						width:684px;
+						margin:10px 0 35px;
+					}
+				}			
+			}
+		}		
+	}
+	#triangle-top{
+				 width: 0; 
+				 height: 0; 
+				 border-left: 1630px solid #E6E6E6; 
+				 border-right: 1630px solid #E6E6E6; 
+				 border-top: 50px solid transparent;
+				 margin:0 auto;
+			} 
+	#main-content{
+			width: $width;
+			padding-top:70px;
+			padding-bottom:50px;
+			background-color:#e6e6e6;			
+		#main-row{							
+			#main-table{
+					margin:0 auto;
+					display:block;
+					border:1px solid black; 				
+				.th-titles{					
+						background-color:#e4edf9;
+						height:130px;
+						@include head-font;
+						border:1px solid black; 
+						th{
+								text-align:center;
+								border:1px solid black;
+								vertical-align:middle; 
+
+							span{
+								@include small-font;	
+								}
+					}
+				}
+				.tr-titles{
+						height:120px;
+						vertical-align:middle;						
+					td{
+						@include sub-font;
+						vertical-align:middle;
+						border:1px solid black; 
+					}
+				}
+			}	
+		}
+		#sub-row{
+			margin-bottom:50px;
+			.col-md-4{
+				p{
+					font-size:33px;
+				}
+				.head-font{
+					@include head-font;
+					}
+				}
+			.col-md-2{
+					padding-top:30px;
+				.head-font{
+					@include head-font;
+					}				
+				}
+			.params{
+					text-align:right;
+			}
+		}
+		#subrow-table{
+			.col-md-12{
+				#sub-table{
+					border:1px solid black; 
+					tr{
+					.th-titles{
+							background-color:#e4edf9;
+							@include head-font;
+							height:130px;
+							border:1px solid black; 
+						span{
+							@include small-font;	
+							}
+							
+						}
+						td{
+							@include sub-font;
+							vertical-align:middle;
+							background-color:#fff;
+							border:1px solid black; 
+						}
+					}
+				}
+			}			
+		}		
+	}
+	#triangle-bottom{
+				 width: 0; 
+				 height: 0; 
+				 border-left: 1630px solid transparent; 
+				 border-right: 1630px solid transparent; 
+				 border-top: 50px solid #E6E6E6;
+				 margin:0 auto;
+			} 
+}
